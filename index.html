@@ -23,12 +23,13 @@
         <div class="na-button">
           <button
             type="button"
-            class="btn btn-secondary"
+            class="btn btn-primary"
             id="new-array"
             onclick="newBars()"
           >
             New Array
           </button>
+          <a href="/index.html" class="btn btn-secondary">Stop</a>
           <span class="slider">
             No. of Bars :
             <input
@@ -53,10 +54,16 @@
           </span>
         </div>
         <div class="sort-button">
-          <button type="button" class="btn btn-success" onclick="bubbleSort()">
+          <button
+            id="bubble"
+            type="button"
+            class="btn btn-success"
+            onclick="bubbleSort()"
+          >
             Bubble
           </button>
           <button
+            id="selection"
             type="button"
             class="btn btn-danger"
             onclick="selectionSort()"
@@ -64,14 +71,20 @@
             Selection
           </button>
           <button
+            id="insertion"
             type="button"
             class="btn btn-warning"
             onclick="insertionSort()"
           >
             Insertion
           </button>
-          <button type="button" class="btn btn-info">Merge</button>
-          <button type="button" class="btn btn-primary" onclick="quickSort()">
+          <button id="merge" type="button" class="btn btn-info">Merge</button>
+          <button
+            id="quick"
+            type="button"
+            class="btn btn-primary"
+            onclick="quickSort()"
+          >
             Quick
           </button>
         </div>

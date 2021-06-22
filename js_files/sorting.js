@@ -1,5 +1,6 @@
 var num = [];
 var special = [];
+var newArrayButton = document.getElementById('new-array');
 
 function newBars() {
   document.getElementById('arr_sz').addEventListener('input', newBars);

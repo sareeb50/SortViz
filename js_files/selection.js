@@ -1,4 +1,11 @@
 async function selectionSort() {
+  newArrayButton.setAttribute('disabled', 'true');
+  document.getElementById('arr_sz').disabled = true;
+  document.getElementById('spd').disabled = true;
+  document.getElementById('bubble').disabled = true;
+  document.getElementById('merge').disabled = true;
+  document.getElementById('quick').disabled = true;
+  document.getElementById('insertion').disabled = true;
   var no_of_bar = document.getElementById('arr_sz').value;
   var the_speed = document.getElementById('spd').value;
   for (let i = 0; i < no_of_bar; i++) {
@@ -25,4 +32,11 @@ async function selectionSort() {
     }
     special[i].style.background = 'green';
   }
+  newArrayButton.removeAttribute('disabled');
+  document.getElementById('arr_sz').disabled = false;
+  document.getElementById('spd').disabled = false;
+  document.getElementById('bubble').disabled = false;
+  document.getElementById('merge').disabled = false;
+  document.getElementById('quick').disabled = false;
+  document.getElementById('insertion').disabled = false;
 }
