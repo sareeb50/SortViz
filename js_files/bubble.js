@@ -12,6 +12,13 @@ const sleepNow = (delay) =>
   new Promise((resolve) => setTimeout(resolve, delay));
 
 async function bubbleSort() {
+  document.getElementById('arr_sz').disabled = true;
+  document.getElementById('spd').disabled = true;
+  document.getElementById('selection').disabled = true;
+  document.getElementById('merge').disabled = true;
+  document.getElementById('quick').disabled = true;
+  document.getElementById('insertion').disabled = true;
+  newArrayButton.setAttribute('disabled', 'true');
   var no_of_bar = document.getElementById('arr_sz').value; //get inputs from sliders
   var the_speed = document.getElementById('spd').value;
   for (var i = 0; i < no_of_bar; i++) {
@@ -39,4 +46,11 @@ async function bubbleSort() {
     }
     special[j].style.background = 'lightgreen';
   }
+  newArrayButton.removeAttribute('disabled');
+  document.getElementById('arr_sz').disabled = false;
+  document.getElementById('spd').disabled = false;
+  document.getElementById('selection').disabled = false;
+  document.getElementById('merge').disabled = false;
+  document.getElementById('quick').disabled = false;
+  document.getElementById('insertion').disabled = false;
 }

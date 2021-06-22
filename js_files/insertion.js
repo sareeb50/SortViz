@@ -1,4 +1,11 @@
 async function insertionSort() {
+  newArrayButton.setAttribute('disabled', 'true');
+  document.getElementById('arr_sz').disabled = true;
+  document.getElementById('spd').disabled = true;
+  document.getElementById('selection').disabled = true;
+  document.getElementById('merge').disabled = true;
+  document.getElementById('quick').disabled = true;
+  document.getElementById('bubble').disabled = true;
   var no_of_bar = document.getElementById('arr_sz').value;
   var the_speed = document.getElementById('spd').value;
 
@@ -25,4 +32,11 @@ async function insertionSort() {
     special[j + 1].style.height = currenta;
     special[j + 1].style.background = 'green';
   }
+  newArrayButton.removeAttribute('disabled');
+  document.getElementById('arr_sz').disabled = false;
+  document.getElementById('spd').disabled = false;
+  document.getElementById('selection').disabled = false;
+  document.getElementById('merge').disabled = false;
+  document.getElementById('quick').disabled = false;
+  document.getElementById('bubble').disabled = false;
 }
