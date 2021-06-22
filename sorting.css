@@ -1,15 +1,39 @@
-#bd{
-    background: rgba(14, 18, 22, 0.829);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+body {
+  margin: 1rem;
+  background: #000;
+  color: white;
 }
-h1{
-    text-align: center;
-    color: ghostwhite;
+.subtitle {
+  color: gray;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.7rem;
 }
-.navbar{
-    background: transparent ;
+span {
+  margin-left: 2rem;
 }
-#bars{
-    margin: auto;
-    width: 1000px;
-    padding: 10px;
+a {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+h1 {
+  padding-top: 2rem;
+  text-align: center;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+.navbar {
+  background: transparent;
+  margin-bottom: 2rem;
+}
+#bars {
+  margin: auto;
+  width: 1000px;
+  padding: 10px;
+}
+
+.g-link {
+  text-align: center;
 }
