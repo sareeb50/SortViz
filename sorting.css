@@ -1,0 +1,15 @@
+#bd{
+    background: rgba(14, 18, 22, 0.829);
+}
+h1{
+    text-align: center;
+    color: ghostwhite;
+}
+.navbar{
+    background: transparent ;
+}
+#bars{
+    margin: auto;
+    width: 1000px;
+    padding: 10px;
+}
