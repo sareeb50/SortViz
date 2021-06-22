@@ -2,6 +2,9 @@ var num = [];
 var special = [];
 var newArrayButton = document.getElementById('new-array');
 
+function refresh() {
+  location.reload();
+}
 function newBars() {
   document.getElementById('arr_sz').addEventListener('input', newBars);
   var no_of_bar = document.getElementById('arr_sz').value;
