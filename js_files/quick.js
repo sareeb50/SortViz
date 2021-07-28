@@ -9,13 +9,7 @@ function quickSort() {
   var no_of_bar = document.getElementById('arr_sz').value;
   var the_speed = document.getElementById('spd').value;
   quickSortRecursive(0, no_of_bar - 1);
-  newArrayButton.removeAttribute('disabled');
-  document.getElementById('arr_sz').disabled = false;
-  document.getElementById('spd').disabled = false;
-  document.getElementById('selection').disabled = false;
-  
-  document.getElementById('bubble').disabled = false;
-  document.getElementById('insertion').disabled = false;
+ 
 }
 
 async function quickSortRecursive(start, end) {
