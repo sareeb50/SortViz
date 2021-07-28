@@ -15,7 +15,7 @@ async function bubbleSort() {
   document.getElementById('arr_sz').disabled = true;
   document.getElementById('spd').disabled = true;
   document.getElementById('selection').disabled = true;
-  document.getElementById('merge').disabled = true;
+  
   document.getElementById('quick').disabled = true;
   document.getElementById('insertion').disabled = true;
   newArrayButton.setAttribute('disabled', 'true');
@@ -50,7 +50,7 @@ async function bubbleSort() {
   document.getElementById('arr_sz').disabled = false;
   document.getElementById('spd').disabled = false;
   document.getElementById('selection').disabled = false;
-  document.getElementById('merge').disabled = false;
+  
   document.getElementById('quick').disabled = false;
   document.getElementById('insertion').disabled = false;
 }

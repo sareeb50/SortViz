@@ -3,7 +3,7 @@ async function selectionSort() {
   document.getElementById('arr_sz').disabled = true;
   document.getElementById('spd').disabled = true;
   document.getElementById('bubble').disabled = true;
-  document.getElementById('merge').disabled = true;
+  
   document.getElementById('quick').disabled = true;
   document.getElementById('insertion').disabled = true;
   var no_of_bar = document.getElementById('arr_sz').value;
@@ -36,7 +36,7 @@ async function selectionSort() {
   document.getElementById('arr_sz').disabled = false;
   document.getElementById('spd').disabled = false;
   document.getElementById('bubble').disabled = false;
-  document.getElementById('merge').disabled = false;
+  
   document.getElementById('quick').disabled = false;
   document.getElementById('insertion').disabled = false;
 }
